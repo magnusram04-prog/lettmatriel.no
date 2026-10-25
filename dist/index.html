@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <script>
+      // Apply saved display settings before the first paint, so nothing flashes.
+      try {
+        if (localStorage.getItem("lettmateriell.theme") === "dark") {
+          document.documentElement.dataset.theme = "dark";
+        }
+        if (localStorage.getItem("lettmateriell.density") === "compact") {
+          document.documentElement.dataset.density = "compact";
+        }
+      } catch (e) {}
+    </script>
+    <meta name="theme-color" content="#5cc28a" />
+    <title>LettMateriell</title>
+    <script type="module" crossorigin src="/assets/index-BEsEyPKx.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DrPODgoh.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
