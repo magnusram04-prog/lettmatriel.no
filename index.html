@@ -6,9 +6,11 @@
     <meta name="color-scheme" content="light dark" />
     <script>
       // Apply saved display settings before the first paint, so nothing flashes.
+      // Dark mode is the default; only a saved choice of light mode turns it off.
+      document.documentElement.dataset.theme = "dark";
       try {
-        if (localStorage.getItem("lettmateriell.theme") === "dark") {
-          document.documentElement.dataset.theme = "dark";
+        if (localStorage.getItem("lettmateriell.theme") === "light") {
+          delete document.documentElement.dataset.theme;
         }
         if (localStorage.getItem("lettmateriell.density") === "compact") {
           document.documentElement.dataset.density = "compact";
