@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personvern – LettMateriell</title>
+<meta name="description" content="Hvilke opplysninger LettMateriell og Chrome-utvidelsen lagrer, hvorfor, og hvordan du får dem slettet.">
+<style>
+  :root { --bg: #f7f8f7; --card: #ffffff; --text: #1d2a23; --muted: #5b6b62; --accent: #2f8f5b; --border: #dfe5e1; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121815; --card: #1a221e; --text: #e6ece8; --muted: #a3b2a9; --accent: #5fb58a; --border: #2c3832; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+  a { color: var(--accent); }
+  .wordmark { font-size: 22px; text-decoration: none; color: var(--text); }
+  .wordmark b { color: var(--accent); }
+  h1 { font-size: 28px; margin: 24px 0 4px; }
+  h2 { font-size: 19px; margin: 28px 0 6px; }
+  .muted { color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+  footer { text-align: center; margin-top: 24px; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <a class="wordmark" href="./"><b>Lett</b>Materiell</a>
+  <h1>Personvern</h1>
+  <p class="muted">Gjelder nettsiden lettmateriell.no og Chrome-utvidelsen LettMateriell. Sist endret 11. november 2026.</p>
+
+  <div class="card">
+    <h2>Hvem er ansvarlig</h2>
+    <p>LettMateriell Ramberg (enkeltpersonforetak), org.nr. 938 774 358, Oslo. Spørsmål om personvern sendes til
+      <a href="mailto:magnus@lettmateriell.no">magnus@lettmateriell.no</a>.</p>
+
+    <h2>Hva vi lagrer, og hvorfor</h2>
+    <table>
+      <tr><th>Opplysning</th><th>Hvorfor</th></tr>
+      <tr><td>E-postadresse og passord</td><td>For at du skal kunne logge inn. Passordet lagres kryptert hos innloggingstjenesten, og vi kan ikke se det.</td></tr>
+      <tr><td>Firmanavn, org.nr. og hvem som er i firmaet</td><td>Kolleger med samme e-postdomene samles i ett firma, slik at dere deler prisene.</td></tr>
+      <tr><td>Varer du åpner hos grossistene (EL-nummer, NRF-nummer, EAN, varenavn og adressen til varesiden)</td><td>For å vise samme vare hos de andre grossistene, og for å lenke direkte til varen. Listen over varer du har åpnet, lagres på kontoen din og er bare synlig for deg.</td></tr>
+            <tr><td>Prisfiler firmaet laster opp</td><td>For å sammenligne priser.</td></tr>
+      <tr><td>Innstillinger i utvidelsen (innlogging, hvilke sider den er slått av på)</td><td>Lagres bare lokalt i nettleseren din.</td></tr>
+    </table>
+
+    <h2>Hva utvidelsen ikke gjør</h2>
+    <ul>
+      <li>Den virker bare på nettsidene til grossistene: Ahlsell, Brødrene Dahl, Onninen, Solar, Heidenreich, Berggård Amundsen og Elektroimportøren. Andre nettsider leser den ikke.</li>
+      <li>Den leser ikke nettleserloggen, passordene dine hos grossistene, handlekurven eller betalingsopplysninger.</li>
+      <li>Den selger ikke opplysninger, og den viser ikke reklame basert på hva du ser på.</li>
+      <li>Den bruker ikke sporing eller analyseverktøy fra andre.</li>
+    </ul>
+
+    <h2>Hvem som behandler opplysningene for oss</h2>
+    <p>Data lagres hos Supabase (database og innlogging) i EU, i Stockholm (eu-north-1). Nettsiden ligger hos GitHub Pages. Vi deler ikke opplysninger med andre, unntatt når loven krever det.</p>
+
+    <h2>Grunnlag og hvor lenge</h2>
+    <p>Vi behandler opplysningene for å levere tjenesten du har bedt om (avtale, personvernforordningen artikkel 6 nr. 1 b). Opplysningene lagres så lenge du har en konto. Sletter du kontoen, slettes opplysningene om deg innen 30 dager. Prisopplysninger om varer, som ikke sier noe om deg, kan bli liggende.</p>
+
+    <h2>Rettighetene dine</h2>
+    <p>Du kan be om innsyn, retting, sletting og å få med deg dataene dine. Send en e-post til
+      <a href="mailto:magnus@lettmateriell.no">magnus@lettmateriell.no</a>, så svarer vi innen 30 dager. Er du uenig i hvordan vi behandler opplysningene, kan du klage til <a href="https://www.datatilsynet.no/" rel="noopener">Datatilsynet</a>.</p>
+  </div>
+
+  <footer class="muted">LettMateriell Ramberg · org.nr. 938 774 358 · <a href="./">Til forsiden</a></footer>
+</main>
+</body>
+</html>
