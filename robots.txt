@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /testbilder/
+
+Sitemap: https://lettmateriell.no/sitemap.xml
