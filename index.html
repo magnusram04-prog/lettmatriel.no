@@ -35,15 +35,28 @@
         "@graph": [
           {
             "@type": "Organization",
-            "name": "LettMateriell Ramberg",
+            "name": "LettMateriell",
+            "legalName": "LettMateriell Ramberg",
             "url": "https://lettmateriell.no/",
             "email": "magnus@lettmateriell.no",
-            "identifier": { "@type": "PropertyValue", "propertyID": "Organisasjonsnummer", "value": "938774358" }
+            "description": "Chrome-utvidelse for elektro- og VVS-firma i Norge. Viser samme vare hos de andre grossistene, med firmaets egne priser, rett på varesiden.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Oslo",
+              "addressCountry": "NO"
+            },
+            "identifier": {
+              "@type": "PropertyValue",
+              "propertyID": "Organisasjonsnummer",
+              "value": "938774358"
+            }
           },
           {
             "@type": "SoftwareApplication",
             "name": "LettMateriell",
             "url": "https://lettmateriell.no/",
+            "downloadUrl": "https://chromewebstore.google.com/detail/lgankhgliiklcdokaannphmoegfhaakf",
+            "sameAs": "https://chromewebstore.google.com/detail/lgankhgliiklcdokaannphmoegfhaakf",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Chrome",
             "inLanguage": "nb",
@@ -52,17 +65,27 @@
         ]
       }
     </script>
-    <script type="module" crossorigin src="./assets/index-bL-N8lD5.js"></script>
+    <script type="module" crossorigin src="./assets/index-ZW7OtizS.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/react-BRnhmgIC.js">
     <link rel="modulepreload" crossorigin href="./assets/supabase-s3XNS0mn.js">
     <link rel="stylesheet" crossorigin href="./assets/index-C_5DJMDu.css">
   </head>
   <body>
-    <div id="root"></div>
-    <noscript>
-      <h1>LettMateriell – se hva varen koster hos de andre grossistene, rett på varesiden</h1>
-      <p>Chrome-utvidelse for elektro- og VVS-firma i Norge. Åpne en vare hos Ahlsell, Brødrene Dahl, Onninen, Solar, Heidenreich, Berggård Amundsen eller Elektroimportøren, og se samme vare hos de andre grossistene med firmaets egne priser.</p>
-      <p>Laget av en elektriker. LettMateriell Ramberg, org.nr. 938 774 358. Kontakt: magnus@lettmateriell.no. <a href="personvern.html">Personvern</a></p>
-    </noscript>
+    <!-- Read by Google without JavaScript. React replaces it when the app loads. -->
+    <div id="root">
+      <p>LettMateriell – Chrome-utvidelse for elektrofirma</p>
+      <h1>Se samme vare hos de andre grossistene – rett på varesiden.</h1>
+      <p>Åpne en elektrovare hos Ahlsell, Onninen, Solar eller en annen grossist. LettMateriell viser den samme varen hos de andre grossistene i et panel nede til høyre, med lenke rett til varen og firmaets egne priser.</p>
+      <p><a href="https://chromewebstore.google.com/detail/lgankhgliiklcdokaannphmoegfhaakf">Legg til i Chrome – gratis</a>. Virker også i Microsoft Edge.</p>
+      <ul>
+      <li>Virker hos sju grossister: Ahlsell, Brødrene Dahl, Onninen, Solar, Heidenreich, Berggård Amundsen og Elektroimportøren.</li>
+      <li>Prisene deres er bare synlige for dere.</li>
+      <li>Laget av en elektriker.</li>
+      </ul>
+      <h2>Hvilken grossist er billigst?</h2>
+      <p>Det avhenger av varen og av avtalen firmaet ditt har hos hver grossist. LettMateriell viser firmaets egen nettopris hos de andre grossistene, rett på varesiden, så dere ser forskjellen selv. <a href="hvilken-grossist-er-billigst.html">Les mer om hvordan du sammenligner</a>.</p>
+      <p><a href="chrome-utvidelse.html">Slik virker utvidelsen</a> · <a href="om-lettmateriell.html">Om LettMateriell</a> · <a href="personvern.html">Personvern</a></p>
+      <p>LettMateriell Ramberg (enkeltpersonforetak), org.nr. 938 774 358, Oslo. Kontakt: <a href="mailto:magnus@lettmateriell.no">magnus@lettmateriell.no</a></p>
+    </div>
   </body>
 </html>
