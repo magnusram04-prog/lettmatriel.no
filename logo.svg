@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- LettMateriell: mørk prislapp (#1f252b) med grønn kant og grønn L (#6fd39b), farger fra panelet i utvidelsen -->
+  <g transform="translate(64 64) scale(0.92) translate(-64 -64)">
+    <path d="M44 8H102Q120 8 120 26V102Q120 120 102 120H44Q38 120 34.5 115.5L9 70Q5.5 64 9 58L34.5 12.5Q38 8 44 8Z" fill="#1f252b" stroke="#6fd39b" stroke-width="8" stroke-linejoin="round"/>
+    <circle cx="30" cy="64" r="8.5" fill="#d8dde1"/>
+    <path d="M56 30H77V81H106V101H56Z" fill="#6fd39b"/>
+  </g>
+</svg>

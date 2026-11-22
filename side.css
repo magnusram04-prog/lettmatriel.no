@@ -1,0 +1,28 @@
+/* Felles stil for de statiske sidene. Samme farger som appen (web/src/styles.css) og utvidelsen. */
+:root {
+  /* Mørkt som standard, som forsiden og appen (index.html). */
+  --bg: #1d2126; --card: #252a30; --text: #d8dde1; --muted: #a3acb3; --border: #363d44;
+  --accent: #6fd39b; /* lenker, 8,9:1 mot kortet */
+  --ink: #161a1e; --tag: #6fd39b; /* logoen: mørk prislapp, grønn L */
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+::selection { background: var(--tag); color: #0d2016; }
+.bar { background: var(--ink); padding: 10px 16px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: #eef1f3; }
+.brand img { width: 30px; height: 30px; }
+.wordmark { font-size: 21px; font-weight: 500; letter-spacing: -0.02em; }
+.wordmark b { font-weight: 750; color: var(--tag); }
+main { max-width: 760px; margin: 0 auto; padding: 28px 16px 48px; }
+.card { background: var(--card); border: 1px solid var(--border); padding: 24px; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h1 { font-size: 28px; line-height: 1.25; margin: 0 0 8px; text-wrap: balance; }
+h2 { font-size: 19px; margin: 28px 0 6px; text-wrap: balance; }
+p, li { max-width: 68ch; text-wrap: pretty; }
+.muted { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+footer { text-align: center; margin-top: 24px; font-size: 14px; }
+ul, ol { padding-left: 22px; }
