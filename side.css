@@ -9,7 +9,7 @@
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
 ::selection { background: var(--tag); color: #0d2016; }
-.bar { background: var(--ink); padding: 10px 16px; }
+.bar { background: var(--ink); padding: 10px max(16px, calc((100% - 760px) / 2 + 16px)); } /* på linje med main */
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: #eef1f3; }
 .brand img { width: 30px; height: 30px; }
 .wordmark { font-size: 21px; font-weight: 500; letter-spacing: -0.02em; }
@@ -26,3 +26,4 @@ table { width: 100%; border-collapse: collapse; font-size: 15px; font-variant-nu
 th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
 footer { text-align: center; margin-top: 24px; font-size: 14px; }
 ul, ol { padding-left: 22px; }
+li + li { margin-top: 8px; } /* lenker i lister: nok avstand for tommelen */
