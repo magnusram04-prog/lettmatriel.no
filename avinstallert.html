@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utvidelsen er fjernet – LettMateriell</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="side.css">
+</head>
+<body>
+<header class="bar"><a class="brand" href="./"><img src="logo.svg" alt="" width="30" height="30"><span class="wordmark"><b>Lett</b>Materiell</span></a></header>
+<main>
+  <h1>Utvidelsen er fjernet</h1>
+  <div class="card">
+    <p>Takk for at du prøvde LettMateriell. Kontoen din og prisene firmaet har lagret, ligger der fortsatt hvis du vil tilbake.</p>
+    <p>Var det noe som ikke virket? Send en e-post til <a href="mailto:magnus@lettmateriell.no">magnus@lettmateriell.no</a>.</p>
+    <p><a href="chrome-utvidelse.html">Installer utvidelsen igjen</a></p>
+  </div>
+</main>
+<script>
+// Marks this installation as removed: only the random number from the address is sent.
+(function () {
+  var i = new URLSearchParams(location.search).get("i");
+  if (!/^[0-9a-f-]{36}$/.test(i || "")) return;
+  var key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFmaGlxY2NhbGRkbGZ2bXhqaXZzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI3NjQ5MTcsImV4cCI6MjEwODM0MDkxN30.yoEjcHJkRbF5asmTSjtvmkcM8sG5DjyXKw3zx15zQRg";
+  fetch("https://afhiqccalddlfvmxjivs.supabase.co/rest/v1/rpc/extension_removed", {
+    method: "POST", keepalive: true, credentials: "omit",
+    headers: { "Content-Type": "application/json", apikey: key, Authorization: "Bearer " + key },
+    body: JSON.stringify({ p_token: i }),
+  }).catch(function () {});
+})();
+</script>
+</body>
+</html>
